@@ -32,17 +32,17 @@ body {
 }
 
 .link-primary {
-    background-color: var(--secondary);
-    color: var(--primary);
+    background-color: var(--tertiary);
+    color: var(--primay);
     border-radius: 0.5rem;
     border: 1px solid var(--secondary);
 }
 
 .link-secondary {
     background-color: var(--primary);
-    color: var(--secondary);
+    color: var(--tertiary);
     border-radius: 0.5rem;
-    border: 1px solid var(--secondary);
+    border: 1px solid var(--primary);
 }
 
 hr {
@@ -64,8 +64,8 @@ hr {
 /**Navigation**/
 
 .navigation {
-    background-color: var(--secondary);
-    color: var(--primary);
+    background-color: var(--tertiary);
+    color: var(--secondary);
     padding: 1rem 0.5rem;
 }
 
@@ -85,4 +85,26 @@ hr {
 
 .link-active {
     font-weight: bold;
+}
+
+/**Header**/
+
+.hero {
+
+    padding: 2rem 0rem;
+    text-align: center;
+}
+
+.hero-heading {
+    font-size: large;
+    color: var(--tertiary);
+}
+.hero-img-block {
+    background-color: #f8fafc;
+}
+.hero-img {   
+    background-color: var(--primary);
+    max-width: 350px;
+    display: block;
+    margin: auto;
 }
