@@ -11,6 +11,7 @@
 body {
     font-family: 'Noto Sans JP', sans-serif;
     margin: 0px;
+    background-color: var(--secondary);
 }
 
 /**Container**/
@@ -20,7 +21,7 @@ body {
 }
 
 .container-center {
-    max-width: 600px;
+    max-width: 350px;
     margin: auto;
 }
 
@@ -29,6 +30,7 @@ body {
 .link {
     text-decoration: none;
     padding: 0.5rem 0.5rem;
+    font-weight: 100;
 }
 
 .link-primary {
@@ -47,6 +49,7 @@ body {
 
 hr {
     margin: 2rem 0rem;
+    border-top: 1px solid var(--primary);
 }
 
 /**Lists**/
@@ -75,16 +78,17 @@ hr {
     padding-left: 0.5rem;
 }
 
-.link-social {
+.link-site {
     color: var(--primary);
 }
 
-.list-social {
+.list-site {
     text-align: right;
 }
 
-.link-active {
-    font-weight: bold;
+.navigation .link-active .link {
+    font-weight: 900;
+    text-decoration: none;
 }
 
 /**Header**/
@@ -99,12 +103,51 @@ hr {
     font-size: large;
     color: var(--tertiary);
 }
-.hero-img-block {
-    background-color: #f8fafc;
-}
+
 .hero-img {   
-    background-color: var(--primary);
     max-width: 350px;
     display: block;
     margin: auto;
+}
+
+.word-highlight {
+    background-color: var(--primary);
+    color: var(--secondary);
+}
+
+/**Section**/
+
+.section {
+    background-color: var(--primary);
+}
+.section {
+    text-align: center;
+    padding: 2rem;
+}
+
+.section-grey {
+    background-color: var(--tertiary);
+}
+
+.list-gap {
+    background-color: var(--secondary);
+    padding: 1rem 0rem;  
+}
+
+/**Footer**/
+
+.footer {
+    background-color: var(--tertiary);
+    padding: 2rem 0rem;
+}
+
+.footer .footer-header {
+    color: var(--secondary);
+    text-align: center;
+    font-weight: bold;
+}
+
+.footer .list-social {
+    padding-inline-start: 0px;
+    text-align: center;
 }
