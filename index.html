@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shashank's Component Library</title>
+    <link href="styles.css" rel="stylesheet"/>
 </head>
 <body>
     <h1>Shashank's Component Library</h1>
@@ -24,33 +25,33 @@
 
     <h2>Containers</h2>
     <h3>Fluid Container</h3>
-    <div>Fluid container. Goes full width of the page, with some margin.(div)</div>
+    <div class="container">Fluid container. Goes full width of the page, with some margin.(div)</div>
     <h3>Center container</h3>
-    <div>Center container. Goes till given width and centers the content.(div)</div>
+    <div class="container container-center">Center container. Goes till given width and centers the content.(div)</div>
 
     <hr>
 
     <h2>Links</h2>
-    <a href="/">Primary link</a>
-    <a href="/">Secondary link</a>
+    <a class="link link-primary" href="/">Primary link</a>
+    <a class="link link-secondary" href="/">Secondary link</a>
 
     <hr>
 
     <h2>Lists</h2>
     <h3>Unordered lists</h3>
-    <ul>
+    <ul class="list-non-bullet">
         <li>Item one</li>
         <li>Item two</li>
     </ul>
 
     <h3>Inline lists</h3>
-    <ul>
-        <li>Inline item one</li>
-        <li>Inline item two</li>
+    <ul class="list-inline">
+        <li class="list-inline">Inline item one</li>
+        <li class="list-inline">Inline item two</li>
     </ul>
 
     <h3>Reverse ordered lists</h3>
-    <ol>
+    <ol reversed>
         <li>Item one</li>
         <li>Item two</li>
     </ol>
@@ -58,12 +59,12 @@
     <hr>
 
     <h2>Navigation</h2>
-    <nav>
-        <div>The Brand Name</div>
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/">Blogs</a></li>
-            <li><a href="/">Projects</a></li>
+    <nav class="navigation">
+        <div class="nav-brand">The Brand Name</div>
+        <ul class="list-social">
+            <li class="list-inline link-active"><a class="link link-social" href="/">Home</a></li>
+            <li class="list-inline"><a class="link link-social" href="/">Blogs</a></li>
+            <li class="list-inline"><a class="link link-social" href="/">Projects</a></li>
         </ul>
     </nav>
 

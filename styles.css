@@ -1,0 +1,88 @@
+/**Font**/
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;400;700&display=swap');
+
+:root {
+    --primary: #f8fafc;
+    --secondary: #171717;
+    --tertiary: #4b5563;
+}
+
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    margin: 0px;
+}
+
+/**Container**/
+
+.container {
+    padding: 1rem 1rem;
+}
+
+.container-center {
+    max-width: 600px;
+    margin: auto;
+}
+
+/**Links**/ 
+
+.link {
+    text-decoration: none;
+    padding: 0.5rem 0.5rem;
+}
+
+.link-primary {
+    background-color: var(--secondary);
+    color: var(--primary);
+    border-radius: 0.5rem;
+    border: 1px solid var(--secondary);
+}
+
+.link-secondary {
+    background-color: var(--primary);
+    color: var(--secondary);
+    border-radius: 0.5rem;
+    border: 1px solid var(--secondary);
+}
+
+hr {
+    margin: 2rem 0rem;
+}
+
+/**Lists**/
+
+.list-non-bullet {
+    list-style: none;
+}
+
+.list-inline {
+    display: inline;
+    padding: 0rem 1rem;
+    margin-block-start: 0rem;
+}
+
+/**Navigation**/
+
+.navigation {
+    background-color: var(--secondary);
+    color: var(--primary);
+    padding: 1rem 0.5rem;
+}
+
+.nav-brand {
+    font-weight: 900;
+    font-size: larger;
+    padding-left: 0.5rem;
+}
+
+.link-social {
+    color: var(--primary);
+}
+
+.list-social {
+    text-align: right;
+}
+
+.link-active {
+    font-weight: bold;
+}
